@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema(
     },
     tone: {
       type: String,
-      enum: [Friendly, Professional],
+      enum: ["Friendly", "Professional","Sales"],
       default: "Professional",
     },
     theme: {
@@ -85,7 +85,7 @@ const userSchema = new mongoose.Schema(
       type: Date,
       default: null,
     },
-    isStepupComplete: {
+    isSetupComplete: {
       type: Boolean,
       default: false,
     },
